@@ -17,7 +17,13 @@ validButton.addEventListener('click', (event) => {
 	
 	if (!valid) {
 		errorText.classList.remove('invisible');
+		valueCont.classList.remove('valid');
+
+    valueCont.classList.add('invalid');
 	} else {
+		valueCont.classList.remove('invalid');
+		valueCont.classList.add('valid');
+		
 		errorText.classList.add('invisible');
 
 		let payment = paymentSystem(valueCont.value);
