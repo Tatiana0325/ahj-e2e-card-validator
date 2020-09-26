@@ -6,7 +6,6 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Card-Validator</title>
-  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 	<div class="images-card">
@@ -19,12 +18,11 @@
 		<img class="card jcb" src="./img/jcb.png" alt="jcb-card">
 	</div>
 
-	<form class="card-valid">
-		<input class="num-card" type="text" placeholder="Введите номер карты">
-		<button class="valid-card">Click to Validate</button>
+	<form data-widget="card-num-form-widget" class="card-valid">
+		<input data-id="card-num-input" class="num-card" type="text" placeholder="Введите номер карты">
+		<button data-id="card-num-submit" class="valid-card">Click to Validate</button>
 	</form>
 
-	<p class="error invisible">Неккоректно введен номер счета</p>	
-	<script src = "./js/app.js"></script>
+	<p class="error invisible">Неккоректно введен номер счета</p>
 </body>
 </html>
